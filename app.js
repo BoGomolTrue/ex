@@ -2,7 +2,9 @@ const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
 const fruits = [];
 
 function getFruit(fruits,arr) {
-    fruits = fruits.splice(0, fruits.length)
+    if(fruits.length) {
+        fruits = fruits.splice(0, fruits.length)
+    }
     arr.forEach(elem => {
         if(elem % 3 === 0 && elem % 5 === 0){
             fruits.push('Apple Orange')
@@ -30,5 +32,13 @@ function getFruitInReplace(arr) {
     }
     return arr;
 }
-console.log(getFruit(fruits, arr));
-console.log(getFruitInReplace(arr));
+getFruit(fruits, arr)
+getFruit(fruits, arr)
+getFruit(fruits, arr)
+getFruit(fruits, arr)
+getFruit(fruits, arr)
+getFruit(fruits, arr)
+getFruit(fruits, arr)
+getFruit(fruits, arr)
+console.log('t', getFruit(fruits, arr));
+//console.log('t2',getFruitInReplace(arr));
